@@ -1,1 +1,2 @@
-Print "nuevo archivo de preubas"
+print ("Archivo de pruebas")
+print ("segunda línea de prueba") 
