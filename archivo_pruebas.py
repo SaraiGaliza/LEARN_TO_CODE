@@ -1,2 +1,2 @@
 print ("Archivo de pruebas")
-print ("segunda línea de prueba") 
+print ("segunda_línea_de_prueba") 
