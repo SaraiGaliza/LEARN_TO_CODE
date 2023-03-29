@@ -1,0 +1,31 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #444;
+  background-color: #eee;
+  line-height: 1.5;
+}
+
+div {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+section {
+  border: 1px solid gray;
+  padding: 20px;
+  width: 250px;
+}
+
+button {
+  margin-top: 20px;
+}
+
+main #Elegir-plan-h2 {
+  text-align: center;
+}
+
