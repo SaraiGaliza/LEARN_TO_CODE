@@ -44,3 +44,8 @@ print ("segunda_línea_de_prueba")
 
 ### OTHERS ###
 # "git stash": Guardamos temporalmente solo en local, pero no hacemos commit. Con "git stash list" revisamos lo que tenemos en stash, y con "git stash pop" recuperamos lo que tenemos en stash. Y con "git stash drop" nos cargamos el stash
+
+#GITHUB
+# git push
+# git pull
+# git clone
