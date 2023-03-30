@@ -1,0 +1,57 @@
+/* DIFERENTES MANERAS DE DAR ESTILO A LOS ELEMENTOS HTML
+Se pueden añadir estilos CSS al código HTML de tres maneras: 
+   Estilos inline: Están dentro de un etiqueta específica en el código escritos de la siguiente manera <div style="propiedad: valor;"></div>
+   Estilos internos: Están dentro del <head> del documento -html definidos con la etiqueta <style type="text/css"></style>
+   Estilos externos: Están en un archvo CSS vinculado al head con la sigueinte etiqueta <link rel="stylesheet" href="Styles.css"> -->
+Para poder dar estilo al código html, necesitamos identificar/seleccionar en el documento html lo elementos a los que queremos aplicar propiedades. Esto se puede hacer de varais maneras a través de diferentes tipos de selectores, vamos a verlas todas con una jerarquía de más genérico a más específico. */
+
+/* Selector de tipo:
+Se escriben usando el nombre del elemento HTML al que queremos dar estilo, sin los operadores lógicos */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #444;
+  background-color: #eee;
+  line-height: 1.5;
+}
+p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+/*Selectores de clase
+Una clase es un atributo que se puede agregar a cualquier elemento HTML (en el código HTML se escribe dentro de la etiqueta, mediante el atributo class=""). Se utiliza para identificar un grupo de elementos que comparten las mismas propiedades y estilos. Los selectores de clase en CSS se escriben con un punto (.) seguido del nombre de la clase. Es posible asignar varias classes a un mismo elemento HTML (<Tag class="clase-1" "clase-2">) */
+.destacado {
+  background-color: tomato;
+  border: 3px solid red;
+}
+
+/*Selectores de id: 
+Se usan para seleccionar elementos más específicos,para ello tenemos que asociar un nombre de clase a una elemnto html con el atributo id (el id es único, no se puede repetir) Los id's en se escriben con un # . Si un elemento html tiene un mismo atributo en una clase y el id, tiene más importancia el valor que esté en el atributo del id y el del css no se tendrá en cuenta. */
+#contenedor-numero-1 {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 20px;
+  border: none;
+  padding: 20px;
+}
+
+/*Selectores descendientes: 
+Permiten seleccionar elementos que están unos dentro de otros, pueden estar formados por etiquetas, clases, id...*/
+header nav { /* Todos los elementos <nav> que se encuentran dentro de <header> */
+  margin: 20px;
+}
+
+#principal section p { /* Todos los <p> dentro de todos los <section> que estén en el elemento con id #principal */
+  line-height: 3;
+}
+
+section#mensaje p.destacado.final { /* Todos los parrafos que tengan las clases .destacado y .final en el elemento con id mensaje, que es una sección */
+  font-weight: bolder;
+}
+
+/*Pseudo clases: 
+Seleccionar elemento en base a su estado, posición o relación. Se establecen en código CSS, no en HTML, y hay de 3 tipos (estado, posición y relación)
+/*Pseudo clases de estado: 
