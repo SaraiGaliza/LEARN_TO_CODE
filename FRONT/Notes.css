@@ -53,5 +53,9 @@ section#mensaje p.destacado.final { /* Todos los parrafos que tengan las clases 
 }
 
 /*Pseudo clases: 
-Seleccionar elemento en base a su estado, posición o relación. Se establecen en código CSS, no en HTML, y hay de 3 tipos (estado, posición y relación)
+Con las pseudo clases podemos seleccionar elemento en base a su estado, posición o relación. Se establecen en código CSS, no en HTML, y hay de 3 tipos (estado, posición y relación)
 /*Pseudo clases de estado: 
+Permiten aplicar propiedades a un elemento HTML basado en un estado que hemoos definido. Se aplican añadiendo dos puntos (:) después del selector y luego especificando el estado que se quiere seleccionar. Son muy útiles para crear interacciones dinámicas en una página web y mejorar la experiencia del usuario.*/
+a:hover { /* Se aplica la propiedad a todos los enlaces <a> cuando el ratón esttá sobre ellos (hover) un enlace */
+  text-decoration: underline;
+}
